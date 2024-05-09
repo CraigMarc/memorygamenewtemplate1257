@@ -84,6 +84,11 @@ var styles = StyleSheet.create({
         alignItems: 'center',
 
     },
+    error: {
+    textAlign: 'center',
+    paddingTop: 5,
+    fontWeight: 'bold',
+    },
 });
 
 function FindPics(props) {
@@ -110,7 +115,7 @@ function FindPics(props) {
     const renderError = () => {
         if (error == "true") {
             return (
-                <Text>Pictures did not load try something else or play offline</Text>
+                <Text style={styles.error}>Pictures did not load try something else or play offline</Text>
             )
         }
 

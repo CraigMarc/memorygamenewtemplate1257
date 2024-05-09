@@ -67,21 +67,22 @@ const App = () => {
 
       else {
         setError("true")
-
+        setLoading(false)
       }
 
     }
 
     catch (error) {
-      //console.error("There has been a problem with your fetch operation:", error);
+      console.log("There has been a problem with your fetch operation:");
       //add error message to dom
+      setLoading(false)
       setError("true")
       //setFindPicsState(true)
     }
 
   }
 
-
+console.log(loading)
 
   useEffect(() => {
     if (offline == false) {
@@ -134,8 +135,9 @@ const App = () => {
   }
 
   if (loading == true) {
-
+    return (
     <Loading />
+    )
   }
 
 
