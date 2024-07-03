@@ -73,7 +73,7 @@ const App = () => {
     }
 
     catch (error) {
-      console.log("There has been a problem with your fetch operation:");
+      //console.log("There has been a problem with your fetch operation:");
       //add error message to dom
       setLoading(false)
       setError("true")
@@ -82,7 +82,7 @@ const App = () => {
 
   }
 
-console.log(loading)
+
 
   useEffect(() => {
     if (offline == false) {
