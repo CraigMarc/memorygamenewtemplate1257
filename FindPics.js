@@ -15,6 +15,7 @@ import {
 } from 'react-native';
 
 import { useState } from 'react'
+import Banner from './Banner.js'
 
 import pic from './images/mountain2.jpg';
 
@@ -64,15 +65,9 @@ var styles = StyleSheet.create({
         paddingBottom: 40,
 
     },
-    card: {
+    banner: {
 
-        height: 222,
-        width: 330,
-        borderStyle: 'solid',
-        borderColor: 'black',
-        borderWidth: 1,
-        alignSelf: 'center',
-        marginTop: 70,
+        paddingTop: 40,
 
     },
     image: {
@@ -166,15 +161,9 @@ function FindPics(props) {
                     {renderError()}
                 </View>
             </View>
-            <View style={styles.card}>
-                <Image
+            <View style={styles.banner}>
 
-                    style={styles.image}
-                    source={
-                        pic
-                    }
-                />
-
+                <Banner/>
             </View>
         </View>
     )
