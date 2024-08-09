@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 
-const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-3866044541725967/9068631498';
-//const adUnitId = "ca-app-pub-3866044541725967/9068631498"
+//const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-3866044541725967/9068631498';
+const adUnitId = "ca-app-pub-3866044541725967/9068631498"
 
 function Banner() {
   return (
