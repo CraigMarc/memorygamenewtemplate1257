@@ -65,7 +65,7 @@ const App = () => {
       );
 
       return () => backHandler.remove();
-    }, []);
+    }, [clickedOn]);
 
   // fetch api data
   const fetchInfo = async (pics) => {
@@ -103,13 +103,6 @@ const App = () => {
   }
 
 
-/*
-  useEffect(() => {
-    if (offline == false) {
-      fetchInfo();
-    }
-  }, [])*/
-
   // event handlers
 
   const handleTouch = (index) => {
@@ -124,6 +117,8 @@ const App = () => {
       setClickedOn((clickedOn) => ([...clickedOn, card]));
     }
   }
+
+
   const handleStart = () => {
 
     if (clickedOn.length > bestGame) {
