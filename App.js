@@ -55,7 +55,7 @@ const App = () => {
     }
     try {
       //return fetch(picUrl)
-      const res = await fetch("https://pixabay.com/api/?key=40272701-d1f0bb34d10cfd0d1c847f1fd&q=" + pics + "&image_type=photo &safesearch=true")
+      const res = await fetch("https://pixabay.com/api/?key=40272701-d1f0bb34d10cfd0d1c847f1fd&q=" + pics + "&image_type=photo&safesearch=true")
 
       const picData = await res.json();
       let picArr = picData.hits
