@@ -10,6 +10,8 @@ import {
   Text,
   useColorScheme,
   View,
+  BackHandler,
+  Alert,
 } from 'react-native';
 
 
@@ -46,6 +48,24 @@ const App = () => {
   const [searchResult, setSearchResult] = useState("mountains")
   const [loading, setLoading] = useState()
   const [offline, setOffline] = useState(false)
+
+  // back button restart game
+
+  useEffect(() => {
+      const backAction = () => {
+
+      handleStart()
+
+        return true;
+      };
+
+      const backHandler = BackHandler.addEventListener(
+        'hardwareBackPress',
+        backAction,
+      );
+
+      return () => backHandler.remove();
+    }, []);
 
   // fetch api data
   const fetchInfo = async (pics) => {
