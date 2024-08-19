@@ -83,12 +83,12 @@ const App = () => {
   }
 
 
-
+/*
   useEffect(() => {
     if (offline == false) {
       fetchInfo();
     }
-  }, [])
+  }, [])*/
 
   // event handlers
 

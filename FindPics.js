@@ -51,7 +51,7 @@ var styles = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 12,
         paddingHorizontal: 32,
-        borderRadius: 4,
+
         elevation: 3,
         backgroundColor: '#24A0ed',
 
