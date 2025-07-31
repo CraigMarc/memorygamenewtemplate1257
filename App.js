@@ -161,6 +161,7 @@ const App = () => {
       <View>
       <StatusBar
          barStyle="dark-content"
+         backgroundColor="transparent"
               />
         <Header
           clickedOn={clickedOn}

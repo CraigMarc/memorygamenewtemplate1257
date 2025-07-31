@@ -42,7 +42,7 @@ var styles = StyleSheet.create({
     flexWrap: 'wrap',
     gap: 20,
     alignContent: 'center',
-    paddingBottom: 120,
+    paddingBottom: 200,
   },
 
   image: {

@@ -121,6 +121,7 @@ function FindPics(props) {
         <View>
         <StatusBar
                  barStyle="dark-content"
+                 backgroundColor="transparent"
                 />
             <Text style={styles.title}>Memory Game</Text>
             <View>
