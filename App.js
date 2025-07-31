@@ -159,6 +159,9 @@ const App = () => {
   if (findPicsState == false && error != "true") {
     return (
       <View>
+      <StatusBar
+         barStyle="dark-content"
+              />
         <Header
           clickedOn={clickedOn}
           loose={loose}

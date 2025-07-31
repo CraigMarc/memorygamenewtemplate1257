@@ -11,7 +11,7 @@ import {
 var styles = StyleSheet.create({
   headerContainer: {
    paddingBottom: 10,
-   paddingTop: 15,
+   marginTop: StatusBar.currentHeight,
   },
 
   title: {

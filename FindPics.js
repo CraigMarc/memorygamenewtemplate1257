@@ -25,7 +25,7 @@ var styles = StyleSheet.create({
         fontSize: 35,
         textAlign: 'center',
         paddingBottom: 20,
-        paddingTop: 10,
+        marginTop: StatusBar.currentHeight,
 
     },
     description: {
@@ -119,6 +119,9 @@ function FindPics(props) {
     return (
 
         <View>
+        <StatusBar
+                 barStyle="dark-content"
+                />
             <Text style={styles.title}>Memory Game</Text>
             <View>
                 <View>
